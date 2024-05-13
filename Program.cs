@@ -17,8 +17,8 @@ var kernel = kernelBuilder
 
 // Create a new chat
 var ai = kernel.GetRequiredService<IChatCompletionService>();
-ChatHistory chat = new("You are an AI assistant that helps people find information.");
-StringBuilder builder = new();
+var chat = new ChatHistory("You are an AI assistant that helps people find information.");
+var builder = new StringBuilder();
 
 // User question & answer loop
 while (true)
